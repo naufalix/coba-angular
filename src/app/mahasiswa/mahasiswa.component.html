@@ -1,0 +1,13 @@
+<h1>Halo Mahasiswa UB {{tahun}}</h1>
+<div style="text-align: center;">
+	Nama : <input type="text" value="Naufal" [disabled]="status" [id]="id">
+	<br>
+	<span [class]="te">Error</span>
+	<span [class]="ts">Success</span>
+	<span [class]="ti">Info</span>
+	<span [class]="tsp">Special</span>
+	<p [class.text-error]="hasError">Ini adalah sebuah informasi</p>
+	<p [ngClass]="msg">Texn ini menggunkan ng class directive</p>
+	<p [style.color]="'purple'">Contoh text dengan style binding</p>
+	<p [ngStyle]="pstyle">Contoh text dengan style binding 2</p>
+</div>

@@ -1,0 +1,12 @@
+<div style="text-align: center;">
+	<p>salam works!</p>
+	<button (click)="hello($event)">Sapa saya!</button>
+	<p>{{sapaan}}</p>
+
+	<input #dataInput type="text" name="" (keyup)="tampilData(dataInput.value)">
+	<button (click)="tampilData(dataInput.value)">Tampil Data</button>
+	<span>{{input}}</span>
+	<br>
+	<input [(ngModel)]="nim" type="text" name="">
+	<span>NIM saya : {{nim}}</span>
+</div>
