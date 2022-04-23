@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./salam.component.scss']
 })
 export class SalamComponent implements OnInit {
+  public foods = ["Bakso","Soto","Rawon","Pecel"]
+  public tampilh2 = false;
   public sapaan = "";
   public input = "";
   public nim = "";
+  public ket = "success";
 
   constructor() { }
 

@@ -1,5 +1,11 @@
 <div style="text-align: center;">
-	<p>salam works!</p>
+	<div *ngIf="tampilh2; then thenH2; else elseH2"></div>
+	<ng-template #thenH2>
+		<h2 >Filkom UB</h2>
+	</ng-template>
+	<ng-template #elseH2>
+		<h2>Filkom Universitas Brawijaya</h2>
+	</ng-template>	
 	<button (click)="hello($event)">Sapa saya!</button>
 	<p>{{sapaan}}</p>
 
@@ -9,4 +15,14 @@
 	<br>
 	<input [(ngModel)]="nim" type="text" name="">
 	<span>NIM saya : {{nim}}</span>
+	<hr>
+	<div [ngSwitch]="ket">
+		<span *ngSwitchCase="'error'" 	class="text-error">Thin is error</span>
+		<span *ngSwitchCase="'success'" class="text-success">Thin is success</span>
+		<span *ngSwitchCase="'info'" 	class="text-info">Thin is info</span>		
+	</div>
+	<hr>
+	<ul>
+		<li *ngFor="let food of foods; index as i">Makanan ke-{{i}} {{food}}</li>
+	</ul>
 </div>
