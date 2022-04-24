@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HaloComponent } from './halo.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import { SalamComponent } from './salam/salam.component';
+import { VokasiComponent } from './vokasi/vokasi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HaloComponent,
     MahasiswaComponent,
-    SalamComponent
+    SalamComponent,
+    VokasiComponent
   ],
   imports: [
     BrowserModule,

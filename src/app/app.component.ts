@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hai selamat datang di Filkom!';
+  public nama = "Naufal";
+  public pesan= ""
   getPenjumlahan(a: number, b: number){
     return a+b;
   }

@@ -1,0 +1,11 @@
+<div style="text-align: center;">
+	<h2>{{ "Hai "+namaMhs }}</h2>
+	<button (click)="getAksi()">Click Me!</button>
+	<br><br>
+	<b>{{ fakultas|uppercase|slice:0:6 }} | </b>
+	<b>{{ mahasiswa|json }}</b>
+	<br>
+	<b>{{ 2.3587|number:'2.2-3' }} | </b>
+	<b>{{ 2500|currency:'Rp ':'symbol' }} | </b>
+	<b>{{ tanggal|date:'Y-m-d hh:mm:ss' }}</b>
+</div>
