@@ -1,11 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+const logo = require('/assets/favicon2.ico').default as string;
+
 @Component({
   selector: 'app-mahasiswa',
   templateUrl: './mahasiswa.component.html',
   styleUrls: ['./mahasiswa.component.scss']
 })
+
+
+
 export class MahasiswaComponent implements OnInit {
+  public imageUrl = '/assets/';
+  public image = ['favicon2.ico'];
+  public assetsx = "assets/img/mitsuha.png";
+  public logo = logo;
+
   public tahun = 2020;
   public id = "Nama Mahasiswa";
   public status = false;
